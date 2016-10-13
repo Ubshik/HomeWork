@@ -11,5 +11,7 @@ public class Test2 {
         System.out.println("New idea!");
         System.out.println("Maybe it is new idea too!");
         System.out.println("111");
+        System.out.println("222");
+        System.out.println("333");
     }
 }
