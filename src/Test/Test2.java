@@ -10,5 +10,6 @@ public class Test2 {
     public static void main(String[] args) {
         System.out.println("New idea!");
         System.out.println("Maybe it is new idea too!");
+        System.out.println("111");
     }
 }
