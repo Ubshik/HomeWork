@@ -8,9 +8,9 @@ import java.util.Scanner;
 public class Nod {
 
     static int getNod(int a, int b) {
-        if (a % b == 0) return b;
-        if (b % a == 0) return a;
-        if (a > b) return getNod(a%b,b);
+        if (a % b == 0) {return b;}
+        if (b % a == 0) {return a;}
+        if (a > b) {return getNod(a%b,b);}
         return getNod(a,b%a);
     }
 

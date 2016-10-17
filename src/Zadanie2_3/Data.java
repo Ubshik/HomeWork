@@ -21,7 +21,7 @@ public class Data {
 
     public String getDate (){
         String day = Long.toString(this.day);
-        String year = Preobrazovanie.preobrazovanie((int)this.year,true);
+        String year = Transformation.transformate((int)this.year,true);
         String month = "";
         switch ((int)this.month){
             case 1:
@@ -157,7 +157,7 @@ public class Data {
     public static void main(String[] args) {
         Data start = new Data (1, 1, 1970);
         System.out.println(start.getDate()+ " " + start.getTime());
-        System.out.println("Введите милисекунды mili = ");
+        System.out.println("Введите милисекунды milisec = ");
         Scanner input = new Scanner(System.in);
         long milisec = input.nextLong();
         start.addMilisecond(milisec);

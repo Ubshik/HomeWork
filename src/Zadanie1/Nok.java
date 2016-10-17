@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Nok {
     static int getNok (int a, int b){
         int d=Nod.getNod(a,b);
-        if (d!=0) return a*b/d;
+        if (d!=0) {return a*b/d;}
         return 0;
 
     }

@@ -7,18 +7,21 @@ import java.util.Scanner;
  */
 public class ChangePlace {
 
-    static public class Chisla{
 
-        int getA () {return a;}
-        int getB () {return b;}
+    static public class Numbers{
 
+        private int a;
+        private int b;
 
-        Chisla(int a, int b){
+        Numbers(int a, int b){
             this.a=a;
             this.b=b;
         }
 
-        void thirdVariable (){
+        int getA () {return a;}
+        int getB () {return b;}
+
+        void useThirdVariable (){
             int c= a;
             a=b;
             b=c;
@@ -30,8 +33,6 @@ public class ChangePlace {
             a=a^b;
         }
 
-        private int a;
-        private int b;
     }
 
 
@@ -40,12 +41,12 @@ public class ChangePlace {
         Scanner scanner = new Scanner(System.in);
         int a=scanner.nextInt();
         int b=scanner.nextInt();
-        Chisla vvod = new Chisla(a, b);
+        Numbers enter = new Numbers(a, b);
         System.out.println("a=" + a);
         System.out.println("b=" + b);
-        vvod.thirdVariable();
-        System.out.println("use changePlace: a=" + vvod.getA() + " b=" + vvod.getB());
-        vvod.useXor();
-        System.out.println("use useXor: a=" + vvod.getA() + " b=" + vvod.getB());
+        enter.useThirdVariable();
+        System.out.println("use changePlace: a=" + enter.getA() + " b=" + enter.getB());
+        enter.useXor();
+        System.out.println("use useXor: a=" + enter.getA() + " b=" + enter.getB());
     }
 }
