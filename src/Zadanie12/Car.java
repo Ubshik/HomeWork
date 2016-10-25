@@ -100,7 +100,7 @@ public class Car implements MethodsCar{
         car.startCar();
         car.unlockDoors();
         car.startCar();
-        car.runDistance(25);
+        car.runDistance(24);
         car.increaseSpeed(10);
         car.decreaseSpeed(15);
         car.runDistance(50);
