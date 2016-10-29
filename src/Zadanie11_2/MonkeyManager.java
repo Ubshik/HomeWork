@@ -26,9 +26,9 @@ public class MonkeyManager {
         MonkeyBanana ban = new MonkeyBanana("Ban");
         MonkeyCoconut coco = new MonkeyCoconut("Coco");
         MonkeyTotal tot = new MonkeyTotal("Total");
-        System.out.println("MonkeyBanana get " + (ban.getFruits(tree1) + ban.getFruits(tree2)) + " bananas");
-        System.out.println("MonkeyCoconut get " + (coco.getFruits(tree1) + coco.getFruits(tree2)) + " coconuts");
-        System.out.println("MonkeyTotal get " + (tot.getFruits(tree1) + tot.getFruits(tree2)) + " fruits");
+        System.out.println("MonkeyBanana get " + (ban.calculateFruits(tree1) + ban.calculateFruits(tree2)) + " bananas");
+        System.out.println("MonkeyCoconut get " + (coco.calculateFruits(tree1) + coco.calculateFruits(tree2)) + " coconuts");
+        System.out.println("MonkeyTotal get " + (tot.calculateFruits(tree1) + tot.calculateFruits(tree2)) + " fruits");
     }
 
 }
