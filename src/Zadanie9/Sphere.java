@@ -6,13 +6,16 @@ import java.util.Scanner;
  * Created by Acer5740 on 23.10.2016.
  */
 public class Sphere {
+
+    String color;
+    int size;
+
     Sphere (){
         color = "";
         size = 0;
     }
 
-    String color;
-    int size;
+
 
 
 

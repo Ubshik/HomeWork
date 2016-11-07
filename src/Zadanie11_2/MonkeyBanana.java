@@ -9,8 +9,9 @@ public class MonkeyBanana extends Monkey {
         super(name);
     }
 
+
     public int calculateFruits(Tree tree) {
-        if (tree.name == "banana") {
+        if (tree.name == TypeTree.BANANA) {
             return super.calculateFruits(tree);
         }
         return 0;

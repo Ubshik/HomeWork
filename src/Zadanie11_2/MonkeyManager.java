@@ -7,15 +7,14 @@ import java.util.Random;
  */
 public class MonkeyManager {
 
-
     public static void main(String[] args) {
-        Tree tree1 = new Tree("banana",12);//in root 12 fruits
+        Tree tree1 = new Tree(TypeTree.BANANA,12);//in root 12 fruits
         int [] branch = new int [3];//3 branches
         for (int i =0; i<branch.length; i++){//number fruits not more 10
             Random random = new Random();
             branch[i] = random.nextInt(10);
         }
-        Tree tree2 = new Tree("coconut",5);
+        Tree tree2 = new Tree(TypeTree.COCONUT,5);
         int [] branch2 = new int [7];//7 branches
         for (int i =0; i<branch2.length; i++){//number fruits not more 10
             Random random = new Random();

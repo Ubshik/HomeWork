@@ -16,11 +16,4 @@ public class BoxTransmission implements MethodTransmission {
         if (speed <= 60) return transmission = 4;
         return transmission = 5;
     }
-
-
-
-
-
-
-
 }

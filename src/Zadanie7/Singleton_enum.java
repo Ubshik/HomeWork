@@ -8,4 +8,8 @@ public enum Singleton_enum {
     private Singleton_enum (){};
     private Singleton_enum(Singleton1 s) {
     };
+
+    public Singleton_enum getInstance () {
+        return INSTANCE;
+    }
 }

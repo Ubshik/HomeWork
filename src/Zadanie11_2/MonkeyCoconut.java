@@ -10,7 +10,7 @@ public class MonkeyCoconut extends Monkey {
     }
 
     public int calculateFruits(Tree tree) {
-        if (tree.name == "coconut") {
+        if (tree.name == TypeTree.COCONUT) {
             return super.calculateFruits(tree);
         }
         return 0;

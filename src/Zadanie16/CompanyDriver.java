@@ -5,19 +5,19 @@ package Zadanie16;
  */
 public class CompanyDriver {
 
-    private static boolean check (Man man){
-        if (man != null && man instanceof Driver){
-            System.out.println(man.getName() + " is hired");
+    boolean check (Driver man){
+        if (man != null){
             return true;
         }
-        else System.out.println(man.getName() + "isn't hired because he does not have the appropriate skills");
         return false;
     }
-
-    public static void main(String[] args) {
-        Employee employee = new Employee("Lion Loren");
-        DriverCar driverCar = new DriverCar("Phil Mandi");
-        check(employee);
-        check(driverCar);
-    }
 }
+
+//    boolean check (Man man){
+//        if (man != null && man instanceof Driver){
+//            System.out.println(man.getName() + " is hired");
+//            return true;
+//        }
+//        else System.out.println(man.getName() + " isn't hired because he does not have the appropriate skills");
+//        return false;
+//    }

@@ -8,10 +8,10 @@ import java.util.Random;
 public class MonkeyManager {
     private int getFruits (Node node){
         if (node == null) {return 0;}
-        if (node.child == null) {return 0;}
-        int fruits = node.fruits;
-        for (int i=0; i<node.child.length; i++){
-            fruits+=node.child[i].fruits;
+        if (node.getChildSize() == 0) {return 0;}
+        int fruits = node.getFruits();
+        for (int i=0; i<node.getChildSize(); i++){
+            fruits+=node.getChild(i).getFruits();
         }
         return fruits;
     }

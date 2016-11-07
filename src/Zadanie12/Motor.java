@@ -22,5 +22,4 @@ public class Motor implements MethodMotor{
         if (speed < 0) speed = 0;
         return speed;
     }
-
 }

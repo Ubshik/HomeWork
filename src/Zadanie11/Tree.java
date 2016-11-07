@@ -9,7 +9,7 @@ public class Tree {
     Node root;
     Tree (int i){
         root = new Node();
-        root.fruits = i;
+        root.setFruits(i);
     }
 
 }
